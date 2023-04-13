@@ -1,0 +1,126 @@
+/* ! Reset */
+body,
+html {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --clr-cyan: hsl(179, 62%, 43%);
+  --clr-brightyellow: hsl(71, 73%, 54%);
+
+  --clr-lightgray: hsl(204, 43%, 93%);
+  --clr-grayishblue: hsl(218, 22%, 67%);
+}
+.padding {
+  padding: 3.5rem;
+}
+body {
+  background: var(--clr-lightgray);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.container {
+  width: 900px;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 44% 60%;
+  border-radius: 0.6rem;
+  box-shadow: 10px 10px 10px#00000023;
+  overflow: hidden;
+}
+.join {
+  background: #ffffff;
+  grid-column-start: span 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.join h2 {
+  color: var(--clr-cyan);
+  font-size: 2.1rem;
+  font-weight: 700;
+
+  margin-bottom: 1rem;
+}
+.join h3 {
+  color: var(--clr-brightyellow);
+  font-size: 1.56rem;
+  font-weight: 700;
+}
+.join p {
+  color: var(--clr-grayishblue);
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.monthly {
+  background: var(--clr-cyan);
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.monthly h2{
+}
+.monthly h3 {
+  font-size: 2.7rem;
+  display: flex;
+  align-items: center;
+
+  margin-top: 2rem;
+}
+.monthly span {
+  flex: 1;
+  
+  margin-left: 1rem;
+  font-size: 1.23rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.monthly p{
+  font-size: 1.36rem;
+  opacity: .9;
+  margin-bottom: 2rem;
+}
+.monthly button{
+  background: var(--clr-brightyellow);
+  border: 0;
+  width: 100%;height: 4rem;
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+  box-shadow: 5px 5px 2px #00000023;
+
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.whyus {
+  background: hsla(179, 62%, 43%, 0.635);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.whyus p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 400;
+  opacity: 0.7;
+
+  margin-bottom: 1.5rem;
+}
